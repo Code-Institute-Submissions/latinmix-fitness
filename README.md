@@ -53,24 +53,26 @@ The colour palette used is extracted from the hero image and have tones of green
 #### Typography
 Headings will follow the logo font-family “Abhaya Libre” with slight increased letter spacing for better readability.
 All other text will be set to font-family “Open Sans”.
+Default fall-back font-family: "sans-Serif".
 
 ## Features *// currently planned features – section to be reviewed during implementation*
 On **every page** there is a Navigation Bar pinned at the top of the page. 
 - On the left side, the LatinMix Fitness logo linking back to the home page.
 - On the right, will pe provided links to Home, Classes (with dropdown), Plans and Contact pages.
-- On the mobile, the Menu will be collapsed to a button.
+- On the mobile, the Menu will be collapsed to a button (burger symbol)
 
 On **every page** there is a Footer at the very bottom of the content.
 - The footer will have the business contact information and social media icons (Facebook, Instagram and LinkedIn) linking back to their business pages.
-- It also gives the option to register to the Newsletter with your Name and Email.
 
 On the **Home** page:
-- At the top, full width hero image and inviting text. There will also be a button to "Contact Us" and book a class.
-- Below the Hero Image, there is the “Our classes” section. Four images spaced evenly on the page representing each style. 2 side by side on mobile, 4 side by side on widerscreens.
+- At the top, full width hero image and inviting text.
+- Below the hero image, a small compeling "About Us" section.
+- Below the "About Us", there is the “Our classes” section. Four images spaced evenly on the page representing each style. 2 side by side on tablet, 4 side by side on wider screens.
   * On mobile and tablet, next to each image there are the dates the classes are available and the link to Class page.
   * On web, text is invisible and on hover-over, the card flips showing the dates the classes are available and the link to Class page.
   * The entire card is clickable to redirect to the Class page.
 - Below the “Our classes” section, there is the “Find your Plan” call to action. This will link to the Plans page.
+- Below "Find your Plan", a small gallery to reinforce business credibility.
 - The last section of the Home page is the “Where to find us”. This will be an embedded google maps with pinned address of facility.
 
 On each **Class** page:
@@ -90,6 +92,7 @@ On the **Plans** page:
 
 On the **Contact** page:
 - The user has two options of contact: sending a query via form or contacting diretly from details provided.
+- Users will also be presented with option to register for the business newsletter. 
 - On mobile the options will be displayed in block (vertically).
 - On table and desktop, two options will be displayed in line (horizontaly).
 - Studio address and map will be displayed under "Contact Us Directly" option.
@@ -101,18 +104,23 @@ On the **Contact** page:
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
 Once the channel is created, the Footer of every page must be updated with the YouTube account and link.
 
-Currently the business owner could not provide enough media resource for a Gallery page.
-Once photos and videos of the classes are taken, a Gallery page must be developed, following the same design used on the website.
-The Navigation of all pages will be updated to include Gallery link.
+Currently the business owner could not provide enough media resource for a full Gallery page.
+Once more photos and videos of the classes are taken, a Gallery page must be developed, following the same design used on the website.
+The Navigation of all pages will be updated to include Gallery link. Gallery section on Home page to be update on call to action button "Show me more".
 
-The business owner wishes to include a About Us page on the first-year anniversary of the business.
-The owner must return with content to be included on page on the history and team of the LatinMix Fitness.
-A About Us page must be developed, following the same design used on the website. The Navigation of all pages will be updated to include About Us link.
+The business owner wishes to include an full About Us page on the first-year anniversary of the business.
+The owner must return with content to be included on page for the history and team of the LatinMix Fitness.
+An About Us page must be developed, following the same design used on the website. The Navigation of all pages will be updated to include About Us link.
 
-The business owner wishes to create an application for booking the classes online instead over the phone.
+The business owner wishes to create an application for booking the classes online, where users can pick dates and time of the classes after log-in on the website.
+If a class is fully-booked classes, users would be able to join a waitlist in case of cancelations.
 The current budget, time constraint and developer knowledge does not allow for this feature.
 
 ## Technologies used *// to complete during implementation*
+
+### Programs
+- [Clip Studio Paint](https://www.clipstudio.net/en/):
+   Used for images resizing and colour adjustments.
 
 ## Testing
 ### Automated testing
@@ -125,8 +133,9 @@ The current budget, time constraint and developer knowledge does not allow for t
 
 ## Credit
 ### Media
-Hero image photograph by Isaiah McClean “Welcome to Burlesque” obtained from Unplash (link https://unsplash.com/photos/j9PpIy_x4EE). The image resizing and hue adjustments performed by the developer with Clip Studio Paint.
-Logo image created by the developer using Canva Logo Generator (link https://www.canva.com/).
+Hero image photograph by Isaiah McClean “Welcome to Burlesque” obtained from [Unplash](https://unsplash.com/photos/j9PpIy_x4EE). The image resizing and hue adjustments performed by the developer with [Clip Studio Paint](https://www.clipstudio.net/en/).
+
+Logo image created by the developer using [Canva Logo Generator](https://www.canva.com/).
 
 ### Code
 
