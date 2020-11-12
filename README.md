@@ -43,7 +43,10 @@ Also, from the Home page the user can access further information on each section
 The structure for every remaining page will be user friendly and expand on the Home page information on small units of details.
 
 ### Skeleton
-
+- [Home Page](https://github.com/belaventer/latinmix-fitness/blob/master/wireframes/home-wireframe.pdf)
+- [Classes Page](https://github.com/belaventer/latinmix-fitness/blob/master/wireframes/classes-wireframe.pdf)
+- [Plans Page](https://github.com/belaventer/latinmix-fitness/blob/master/wireframes/plans-wireframe.pdf)
+- [Contact Page](https://github.com/belaventer/latinmix-fitness/blob/master/wireframes/contact-wireframe.pdf)
 
 ### Surface
 #### Colour
