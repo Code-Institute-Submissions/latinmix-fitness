@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+/* ----- FONTS ----- */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.font-navbar{
+    text-align: center;
+}
+
+/* ----- COLOURS ----- */
+.bg-colour-navbar {
+    background-color: #e5f3f1;
+}
+
+/* ----- OVEWRITE BOOTSTRAP ----- */
+.navbar {
+    padding: 0 1.5rem;
+}
+
+.navbar .navbar-toggler{
+    border-color: transparent;
+}
+
+.dropdown-menu {
+    background-color: #bfdfda98;
+    text-align: center;
+    min-width: 7.5rem;
+    border: 0;
+}
+
+.nav-link {
+    padding: .25rem 1rem;
+}
