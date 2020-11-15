@@ -59,10 +59,7 @@ All other text will be set to font-family “Open Sans”.
 Default fall-back font-family: "sans-Serif".
 
 ## Features *// currently planned features – section to be reviewed during implementation*
-On **every page** there is a Navigation Bar pinned at the top of the page. 
-- On the left side, the LatinMix Fitness logo linking back to the home page.
-- On the right, will pe provided links to Home, Classes (with dropdown), Plans and Contact pages.
-- On the mobile, the Menu will be collapsed to a button (burger symbol)
+On **every page** there is a Navigation Bar at the top of the page. 
 
 On **every page** there is a Footer at the very bottom of the content.
 - The footer will have the business contact information and social media icons (Facebook, Instagram and LinkedIn) linking back to their business pages.
@@ -101,7 +98,9 @@ On the **Contact** page:
 - Studio address and map will be displayed under "Contact Us Directly" option.
 
 ### Existing Features *// to complete during implementation*
-
+- **Navigation Bar** feature: on the left side, there is the **Header Logo** linking back to the **Home** page.
+- **Navigation Bar** feature: on the right side, there are links to **Home**, **Classes**, **Plans** and **Contact** pages. **Classes** pages are under a dropdown menu expandable when clicking.
+On **Mobile** all links are collapsed into the Hamburger Symbol.
 
 ### Features left to implement
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
@@ -120,9 +119,21 @@ If a class is fully-booked classes, users would be able to join a waitlist in ca
 The current budget, time constraint and developer knowledge does not allow for this feature.
 
 ## Technologies used *// to complete during implementation*
+### Languages
+- HTML | HTML5
+- CSS | CSS3
+
+### Libraries and Frameworks
+- [Bootstrap v4.5](https://getbootstrap.com/):
+
+   Used for Navigation Bar component.
+- [Google Fonts](https://fonts.google.com/):
+   
+   Used to import “Abhaya Libre” and “Open Sans” fonts.
 
 ### Programs
 - [Clip Studio Paint](https://www.clipstudio.net/en/):
+
    Used for images resizing and colour adjustments.
 
 ## Testing
@@ -130,7 +141,32 @@ The current budget, time constraint and developer knowledge does not allow for t
 
 ### User stories testing
 
-### Manual testing of features *// manual testing to be completed as features are developed*
+### Manual testing of features
+1. **Navigation Bar** feature **Header Logo**:
+
+   | Test No. | Action & spected results | Pass / Fail |
+   | --- | :---:| ---:|
+   | 1.1 | From the Home page, verify the **Header Logo** is visible on the top left corner of the page. | Pass |
+   | 1.2 | From the Home page, click on the **Header Logo** and verify the Home Page is loaded. | Pass |
+   | 1.3 | Reapet steps 1 and 2 for all other pages and verify the same results are achieved. | Pass |
+
+2. **Navigation Bar** feature **Navigation Links**:
+
+   | Test No. | Action & spected results | Pass / Fail |
+   | --- | :---:| ---:|
+   | 2.1 | From the Home page, verify the **Navigation Links** are visible on the top right corner of the page. | Pass |
+   | 2.2 | From the Home page, click on the **Home Link** and verify the Home Page is loaded. | Pass |
+   | 2.3 | From the Home page, click on the **Classes Link** and verify the dropdown is shown with Links "Salsa", "Samba", "Zumba", "Forró". | Pass |
+   | 2.4 | From the Home page, click on the **Classes Link** then on **Salsa** and verify the Salsa Page is loaded. | Pass |
+   | 2.5 | From the Home page, click on the **Classes Link** then on **Samba** and verify the Samba Page is loaded. | Pass |
+   | 2.6 | From the Home page, click on the **Classes Link** then on **Zumba** and verify the Zumba Page is loaded. | Pass |
+   | 2.7 | From the Home page, click on the **Classes Link** then on **Forró** and verify the Forró Page is loaded. | Pass |
+   | 2.8 | From the Home page, click on the **Plans Link** and verify the Plans Page is loaded. | Pass |
+   | 2.9 | From the Home page, click on the **Contact Link** and verify the Contact Page is loaded. | Pass |
+   | 2.10 | From the Home page, use the developers tool to decrease the view widht. Verify links collapse to a **Burger button** on the top right corner of the page. | Pass |
+   | 2.11 | From the previous step, click on the burger button and verify the links are shown. | Pass |
+   | 2.12 | Reapet steps 1 to 11 for all other pages and verify the same results are achieved. | Fail - Navbar on other pages did not have the same style as Home page as link to style.css was not initally included on other html files - **Issued fixed** |
+
 
 ## Deployment *// to be completed once project is nearly done*
 
@@ -141,5 +177,8 @@ Hero image photograph by Isaiah McClean “Welcome to Burlesque” obtained from
 Logo image created by the developer using [Canva Logo Generator](https://www.canva.com/).
 
 ### Code
+Favicon added as per ["Add A Favicon to A Website in HTML | Learn HTML and CSS | HTML Tutorial | HTML for Beginners"](https://www.youtube.com/watch?v=kEf1xSwX5D8) by Dani Krossing
 
+Navigation Bar inspiration from Code Institute Full Stack Development Course Boostrap Basecamp lesson.
+    
 ### Acknowledgments
