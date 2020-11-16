@@ -7,16 +7,32 @@ body {
     letter-spacing: 2px;
 }
 
-.font-navbar{
-    text-align: center;
+h4{
+    font-family: "Abhaya Libre", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 145%;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 /* ----- COLOURS ----- */
-.bg-colour-navbar {
+.bg-colour-navbar,
+.bg-colour-footer {
     background-color: #e5f3f1;
 }
 
-/* ----- OVEWRITE BOOTSTRAP ----- */
+/* ----- NAVIGATION BAR ----- */
+.container-fluid {
+    padding: 0;
+}
+
 .navbar {
     padding: 0 1.5rem;
 }
@@ -34,4 +50,66 @@ body {
 
 .nav-link {
     padding: .25rem 1rem;
+}
+
+.font-navbar{
+    text-align: center;
+}
+
+/* ----- FOOTER ----- */
+.footer-container {
+    padding: 0 1.5rem;
+}
+
+footer .footer-head {
+    text-align: center;
+    padding-right: 0.75rem;
+    font-weight: 700;
+    margin: 7.5px 0;
+}
+
+.footer-contact-head {
+    text-align: right;
+    padding-right: 0.75rem;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+.footer-contact-info {
+    text-align: left;
+    padding-left: 0.35rem;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+}
+
+footer a {
+    color: rgba(0,0,0,.5);
+    font-size: 245%;
+}
+
+footer a:hover {
+    color: rgba(0,0,0,.9);
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+/* Desktop screens */
+@media only screen and (max-width: 1200px) {
+    body{
+        font-size: 16px;
+    }
+}
+
+/* Table screens */
+@media only screen and (max-width: 992px) {
+       body{
+        font-size: 14px;
+    }
+}
+
+/* Mobile and tables screens */
+@media only screen and (max-width: 768px) {
+        body{
+        font-size: 12px;
+    }
 }
