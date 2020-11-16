@@ -48,6 +48,9 @@ The structure for every remaining page will be user friendly and expand on the H
 - [Plans Page](https://github.com/belaventer/latinmix-fitness/blob/master/wireframes/plans-wireframe.pdf)
 - [Contact Page](https://github.com/belaventer/latinmix-fitness/blob/master/wireframes/contact-wireframe.pdf)
 
+#### Deviations from planed wireframes
+- Footer information for mobile screens was stacked instead of shown inline as the content would not fit.
+
 ### Surface
 #### Colour
 The website will use vibrant colour palette to evoke fun and exciting feelings.
@@ -62,7 +65,6 @@ Default fall-back font-family: "sans-Serif".
 On **every page** there is a Navigation Bar at the top of the page. 
 
 On **every page** there is a Footer at the very bottom of the content.
-- The footer will have the business contact information and social media icons (Facebook, Instagram and LinkedIn) linking back to their business pages.
 
 On the **Home** page:
 - At the top, full width hero image and inviting text.
@@ -102,6 +104,10 @@ On the **Contact** page:
 - **Navigation Bar** feature: on the right side, there are links to **Home**, **Classes**, **Plans** and **Contact** pages. **Classes** pages are under a dropdown menu expandable when clicking.
 On **Mobile** all links are collapsed into the Hamburger Symbol.
 
+- **Footer** feature: on the left side, there is the Business contact information.
+- **Footer** feature: on the right side, there is the social media icons links (Facebook, Instagram and LinkedIn).
+- **Footer** feature: items on footer are responsive. On **Mobile**, they are shown stacked. On medium to larger screens, information is shown inline.
+
 ### Features left to implement
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
 Once the channel is created, the Footer of every page must be updated with the YouTube account and link.
@@ -126,10 +132,13 @@ The current budget, time constraint and developer knowledge does not allow for t
 ### Libraries and Frameworks
 - [Bootstrap v4.5](https://getbootstrap.com/):
 
-   Used for Navigation Bar component.
+   Used for Navigation Bar and grid layout.
 - [Google Fonts](https://fonts.google.com/):
    
    Used to import “Abhaya Libre” and “Open Sans” fonts.
+- [Fonts Awesome v5.15](https://fontawesome.com/):
+
+   Used to include Social Media Icons on the footer.
 
 ### Programs
 - [Clip Studio Paint](https://www.clipstudio.net/en/):
@@ -167,6 +176,22 @@ The current budget, time constraint and developer knowledge does not allow for t
    | 2.11 | From the previous step, click on the burger button and verify the links are shown. | Pass |
    | 2.12 | Reapet steps 1 to 11 for all other pages and verify the same results are achieved. | Fail - Navbar on other pages did not have the same style as Home page as link to style.css was not initally included on other html files - **Issued fixed** |
 
+3. **Footer** feature **Responsiveness**:
+
+   | Test No. | Action & spected results | Pass / Fail |
+   | --- | :---:| ---:|
+   | 3.1 | From the Home page, verify the business **Phone and Email** information is visible on the left bottom side of the page. | Pass |
+   | 3.2 | From the Home page, verify the **Social Media icons** are visible on the right bottom side of the page. | Pass |
+   | 3.3 | From the Home page, use the developers tool to decrease the view widht. Verify the footer content does not break and it stacks as the screen gets narrower. | Fail - the use of bootsrap alone was not enough to fit the content, as the font size also need to be reduced. Media queries added for this purpose - **Issued fixed** |
+   | 3.4 | Reapet steps 1 to 11 for all other pages and verify the same results are achieved. | Pass |
+
+4. **Footer** feature **Social Media**:
+
+| Test No. | Action & spected results | Pass / Fail |
+   | --- | :---:| ---:|
+   | 4.1 | From the Home page, hover over the **Social Media icons** and verify each icon gets darker. | Pass |
+   | 4.2 | From the Home page, click every icon and verify **Social Media home page** opens in a new tab. | Pass |
+   | 4.3 | Reapet steps 1 to 11 for all other pages and verify the same results are achieved. | Pass |
 
 ## Deployment *// to be completed once project is nearly done*
 
@@ -179,6 +204,12 @@ Logo image created by the developer using [Canva Logo Generator](https://www.can
 ### Code
 Favicon added as per ["Add A Favicon to A Website in HTML | Learn HTML and CSS | HTML Tutorial | HTML for Beginners"](https://www.youtube.com/watch?v=kEf1xSwX5D8) by Dani Krossing
 
-Navigation Bar inspiration from Code Institute Full Stack Development Course Boostrap Basecamp lesson.
+Navigation Bar inspiration from [Code Institute](https://codeinstitute.net/) Full Stack Development Course Boostrap Basecamp lesson.
+
+Use of span class sr-only for screen headers on Social Links taken from [Code Institute](https://codeinstitute.net/) Full Stack Development Course Resume Mini-project lesson.
+
+[Bootstrap Documentation](https://getbootstrap.com/) was constantly referred to for the correct use of Bootstrap components and grid.
+
+[W3Schools](https://www.w3schools.com/) referred to for general HTML and CSS syntax.
     
 ### Acknowledgments
