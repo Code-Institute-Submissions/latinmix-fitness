@@ -108,6 +108,8 @@ On **Mobile** all links are collapsed into the Hamburger Symbol.
 - **Footer** feature: on the right side, there is the social media icons links (Facebook, Instagram and LinkedIn).
 - **Footer** feature: items on footer are responsive. On **Mobile**, they are shown stacked. On medium to larger screens, information is shown inline.
 
+- **Hero-image** feature: when the home page is loaded, the hero-image is displayed below the **Navigation Bar** and the inviting text moves left to right to catch attention.
+
 ### Features left to implement
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
 Once the channel is created, the Footer of every page must be updated with the YouTube account and link.
@@ -174,7 +176,7 @@ The current budget, time constraint and developer knowledge does not allow for t
    | 2.9 | From the Home page, click on the **Contact Link** and verify the Contact Page is loaded. | Pass |
    | 2.10 | From the Home page, use the developers tool to decrease the view widht. Verify links collapse to a **Burger button** on the top right corner of the page. | Pass |
    | 2.11 | From the previous step, click on the burger button and verify the links are shown. | Pass |
-   | 2.12 | Reapet steps 1 to 11 for all other pages and verify the same results are achieved. | Fail - Navbar on other pages did not have the same style as Home page as link to style.css was not initally included on other html files - **Issued fixed** |
+   | 2.12 | Reapet steps 1 to 11 for all other pages and verify the same results are achieved. | Fail - Navbar on other pages did not have the same style as Home page as link to style.css was not initally included on other html files - **Issue fixed** |
 
 3. **Footer** feature **Responsiveness**:
 
@@ -182,16 +184,23 @@ The current budget, time constraint and developer knowledge does not allow for t
    | --- | :---:| ---:|
    | 3.1 | From the Home page, verify the business **Phone and Email** information is visible on the left bottom side of the page. | Pass |
    | 3.2 | From the Home page, verify the **Social Media icons** are visible on the right bottom side of the page. | Pass |
-   | 3.3 | From the Home page, use the developers tool to decrease the view widht. Verify the footer content does not break and it stacks as the screen gets narrower. | Fail - the use of bootsrap alone was not enough to fit the content, as the font size also need to be reduced. Media queries added for this purpose - **Issued fixed** |
-   | 3.4 | Reapet steps 1 to 11 for all other pages and verify the same results are achieved. | Pass |
+   | 3.3 | From the Home page, use the developers tool to decrease the view widht. Verify the footer content does not break and it stacks as the screen gets narrower. | Fail - the use of bootsrap alone was not enough to fit the content, as the font size also need to be reduced. Media queries added for this purpose - **Issue fixed** |
+   | 3.4 | Reapet steps 1 to 3 for all other pages and verify the same results are achieved. | Pass |
 
 4. **Footer** feature **Social Media**:
 
-| Test No. | Action & spected results | Pass / Fail |
+   | Test No. | Action & spected results | Pass / Fail |
    | --- | :---:| ---:|
    | 4.1 | From the Home page, hover over the **Social Media icons** and verify each icon gets darker. | Pass |
    | 4.2 | From the Home page, click every icon and verify **Social Media home page** opens in a new tab. | Pass |
-   | 4.3 | Reapet steps 1 to 11 for all other pages and verify the same results are achieved. | Pass |
+   | 4.3 | Reapet steps 1 and 2 for all other pages and verify the same results are achieved. | Pass |
+
+5. **Hero-image** feature:
+
+   | Test No. | Action & spected results | Pass / Fail |
+   | --- | :---:| ---:|
+   | 5.1 | Load the Home page and verify the **hero-image** is visible. | Pass |
+   | 5.2 | Load the Home page and verify the text and horizontal rule on top of the hero images moves slightly to the right together. | Pass |
 
 ## Deployment *// to be completed once project is nearly done*
 
@@ -207,6 +216,8 @@ Favicon added as per ["Add A Favicon to A Website in HTML | Learn HTML and CSS |
 Navigation Bar inspiration from [Code Institute](https://codeinstitute.net/) Full Stack Development Course Boostrap Basecamp lesson.
 
 Use of span class sr-only for screen headers on Social Links taken from [Code Institute](https://codeinstitute.net/) Full Stack Development Course Resume Mini-project lesson.
+
+Use of animation for hero image text inspired by [Code Institute](https://codeinstitute.net/) Full Stack Development Course Resume HTML/CSS Love Running Project lesson.
 
 [Bootstrap Documentation](https://getbootstrap.com/) was constantly referred to for the correct use of Bootstrap components and grid.
 
