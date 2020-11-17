@@ -7,11 +7,18 @@ body {
     letter-spacing: 2px;
 }
 
-h4{
+h2, h4{
     font-family: "Abhaya Libre", sans-serif;
     letter-spacing: 1.5px;
-    font-size: 145%;
     margin: 0;
+}
+
+h2{
+    font-size: 1.65em;
+}
+
+h4{
+    font-size: 1.45em;
 }
 
 p{
@@ -91,6 +98,66 @@ footer a:hover {
     color: rgba(0,0,0,.9);
 }
 
+/* ----- HOME PAGE - HERO IMAGE ----- */
+.hero-image {
+    background-image: url("../images/hero-image.jpg");
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+    height: 75vh;
+}
+
+.display-3 {
+    font-size: 3.5em;
+}
+
+.hero-image-text {
+    background-color: rgba(242, 92, 119, 0.253);
+    color: #e5f3f1;
+    max-height: 100%;
+}
+
+.hero-image-text h2 {
+    padding: 35vh 10vw 0;
+    overflow: hidden;
+    }
+
+.hero-image-text p {
+    font-weight: 600;
+    padding: 0 10vw 25px;
+    font-size: 1.45em;
+    overflow: hidden;
+}
+
+.hero-image-text hr {
+    border-top: solid 3px #e5f3f1;
+    margin: 0.75em 0 0.75em 10vw;
+    width: 80vw;
+    animation: hero-hr-in 3s ease-out;
+}
+
+.hero-image-text h2, .hero-image-text p {
+    animation: hero-text-in 3s ease-out;
+}
+
+/* Animation inspired by Code Institute Full Stack Development Course HTML/CSS Project - Love Running */
+@keyframes hero-text-in {
+    from {
+        padding-left: 0;
+    }
+    to {
+        padding-left: 10vw;
+    }
+}
+
+@keyframes hero-hr-in {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 10vw;
+    }
+}
 /* ----- MEDIA QUERIES ----- */
 
 /* Desktop screens */
