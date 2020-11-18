@@ -110,6 +110,8 @@ On **Mobile** all links are collapsed into the Hamburger Symbol.
 
 - **Hero-image** feature: when the home page is loaded, the hero-image is displayed below the **Navigation Bar** and the inviting text moves left to right to catch attention.
 
+- **About Us** feature: below the hero-image, the **LatinMix Logo** is visible with a short description text enforcing the business idea.
+
 ### Features left to implement
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
 Once the channel is created, the Footer of every page must be updated with the YouTube account and link.

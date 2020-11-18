@@ -14,7 +14,7 @@ h2, h4{
 }
 
 h2{
-    font-size: 1.65em;
+    font-size: 1.75em;
 }
 
 h4{
@@ -27,6 +27,13 @@ p{
 
 .uppercase {
     text-transform: uppercase;
+}
+
+hr {
+    border-top: solid 3px;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    width: 80vw;
 }
 
 /* ----- COLOURS ----- */
@@ -51,6 +58,7 @@ p{
 .dropdown-menu {
     background-color: #bfdfda98;
     text-align: center;
+    font-size: 1rem;
     min-width: 7.5rem;
     border: 0;
 }
@@ -115,29 +123,42 @@ footer a:hover {
     background-color: rgba(242, 92, 119, 0.253);
     color: #e5f3f1;
     max-height: 100%;
+    overflow: hidden;
 }
 
 .hero-image-text h2 {
     padding: 35vh 10vw 0;
-    overflow: hidden;
-    }
+}
 
 .hero-image-text p {
     font-weight: 600;
     padding: 0 10vw 25px;
     font-size: 1.45em;
-    overflow: hidden;
 }
 
 .hero-image-text hr {
-    border-top: solid 3px #e5f3f1;
-    margin: 0.75em 0 0.75em 10vw;
-    width: 80vw;
+    border-color: #e5f3f1;
+    margin-left: 10vw;
     animation: hero-hr-in 3s ease-out;
 }
 
 .hero-image-text h2, .hero-image-text p {
     animation: hero-text-in 3s ease-out;
+}
+
+/* ----- HOME PAGE - ABOUT US ----- */
+.about-us {
+    font-size: 1.25rem;
+    padding: 2.5rem 1.75rem 1.5rem;
+}
+
+.about-us hr {
+    border-color: #2B4038;
+}
+
+.about-us-text {
+    padding: 0.75rem 0;
+    color: #2B4038;
 }
 
 /* Animation inspired by Code Institute Full Stack Development Course HTML/CSS Project - Love Running */
@@ -162,21 +183,33 @@ footer a:hover {
 
 /* Desktop screens */
 @media only screen and (max-width: 1200px) {
-    body{
+    html{
         font-size: 16px;
+    }
+
+    .about-us img {
+        width: 205px;
     }
 }
 
 /* Table screens */
 @media only screen and (max-width: 992px) {
-       body{
+       html{
         font-size: 14px;
+    }
+
+    .about-us img {
+        width: 170px;
     }
 }
 
 /* Mobile and tables screens */
 @media only screen and (max-width: 768px) {
-        body{
+        html{
         font-size: 12px;
+    }
+
+    .about-us img {
+        width: 120px;
     }
 }
