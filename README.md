@@ -109,10 +109,12 @@ On **Mobile** all links are collapsed into the Hamburger Symbol.
 
 - **About Us** feature: below the hero-image, the **LatinMix Logo** is visible with a short description text enforcing the business idea.
 
- - **Classes** Home page feature: 4 images are displayed to link to the Class page.
+- **Classes** Home page feature: 4 images are displayed to link to the Class page.
    On mobile they are stacked with the text and button visible.
    On table they are 2 side by side with the text and button visible.
    On web they are displayed 4 in line and text is invisible. On hover, the text and button becomes visible.
+
+- **Plans** Home page feature: blinking affordable price, small assuring paragraph for the customers and a call to action button linking to the **Plans** page.
 
 ### Features left to implement
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
@@ -144,10 +146,10 @@ The current budget, time constraint and developer knowledge does not allow for t
    Used to import “Abhaya Libre” and “Open Sans” fonts.
 - [Fonts Awesome v5.15](https://fontawesome.com/):
 
-   Used to include Social Media Icons on the footer.
+   Used to include Social Media Icons on the footer and pointer at "Find your plan" button.
 - [Hover.css](https://ianlunn.github.io/Hover/):
 
-   Used for hover effect on classes card of Home page.
+   Used for hover effect on classes cards and "Find your plan" button on Home page.
 
 ### Programs
 - [Clip Studio Paint](https://www.clipstudio.net/en/):
@@ -188,4 +190,6 @@ Use of animation for hero image text inspired by [Code Institute](https://codein
 
 [Hover.css](https://ianlunn.github.io/Hover/) used for the Home page classes card hover effect with few modifications. Classes feature inspired by feature on [Sporty - WordPress Gym Theme](https://www.awwwards.com/sites/sporty-wordpress-gym-theme)
     
+[Hover.css](https://ianlunn.github.io/Hover/) used for the "Find your plan" button hover effect with few modifications.
+
 ### Acknowledgments

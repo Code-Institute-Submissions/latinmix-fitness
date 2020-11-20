@@ -63,6 +63,14 @@ Refer to [Main project file](https://github.com/belaventer/latinmix-fitness/blob
    | 6.1 | Load the Home page and verify the **Our Classes** is visible. | Pass |
    | 6.2 | From the Home page, hover over each image and verify the text about class and learn more button becomes visible. | Pass |
    | 6.3 | From the Home page, click every image and verify relevant **Class page** opens. | Pass |
-   | 6.4 | From the Home page, use the developers tool to decrease the view widht. Verify the images decrease to 2 by side and then stack 1 on top of each other. | Fail - the use of max/min-widht was overwritten Bootstraps column responsiveness. Div to force break added for small to large sizes - **Issue fixed**  |
-   | 6.5 | From the Home page, use the developers tool to decrease the view widht below 1200px. Verify the image text is alwys visible. | Fail - as border were always visible on smaller screens, for small displays with hover function a second border appeared on hover. Hover border style removed with media query. - **Issue fixed**  |
+   | 6.4 | From the Home page, use the developers tool to decrease the view width. Verify the images decrease to 2 by side and then stack 1 on top of each other. | Fail - the use of max/min-widht was overwritten Bootstraps column responsiveness. Div to force break added for small to large sizes - **Issue fixed**  |
+   | 6.5 | From the Home page, use the developers tool to decrease the view width below 1200px. Verify the image text is alwys visible. | Fail - as border were always visible on smaller screens, for small displays with hover function a second border appeared on hover. Hover border style removed with media query. - **Issue fixed**  |
 
+7. **Plans - Home page** feature:
+
+   | Test No. | Action & spected results | Pass / Fail |
+   | --- | :---:| ---:|
+   | 7.1 | Load the Home page and verify the **Plans** section is visible. | Pass |
+   | 7.2 | From the Home page, verify the price background and color is blinkig on the section heading. | Pass |
+   | 7.3 | From the Home page, click the **Find your plan** button and verify the **Plans** page opens. | Pass |
+   | 7.4 | From the Home page, use the developers tool to decrease the view width. Verify the sections content do not break. | Pass |
