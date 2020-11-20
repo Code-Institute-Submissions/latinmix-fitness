@@ -46,7 +46,8 @@ hr {
 
 /* ----- COLOURS ----- */
 .bg-colour-navbar,
-.bg-colour-footer {
+.bg-colour-footer,
+.bg-colour-plans {
     background-color: #e5f3f1;
 }
 
@@ -277,6 +278,75 @@ footer a:hover {
 }
 /* END OF HOVER.CSS EXTRACT */
 
+/* ----- HOME PAGE - FIND YOUR PLAN ----- */
+.find-plan {
+    font-size: 1.10rem;
+    padding: 2.5rem 1.75rem 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.find-plan p{
+    width: 80%;
+    padding-bottom: 0.75rem;
+    color: #2B4038;
+}
+
+.find-plan h2{
+    width: auto;
+    padding-bottom: 0.75rem;
+    color: #2B4038;
+}
+
+.find-plan strong {
+    display: inline-block;
+    padding: 4px 4px;
+    border-radius: 8px;
+    font-size: 1.15em; 
+}
+
+.blink {
+    animation: shake-price 0.3s infinite;
+    animation-direction: alternate;
+}
+
+/* Justify only one flex item to the left solution taken from https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties */
+.find-plan a{
+    margin-left: auto;
+    background-color: #D96A88;
+    border-radius: 3px;
+    color: #e5f3f1;
+    font-weight: 600;
+    padding: 6.5px 6.5px 8px;
+    font-size: 1.25em;
+}
+
+.find-plan i{
+    font-size: 1.75rem;
+    vertical-align: -0.2em;
+}
+
+/* START OF HOVER.CSS EXTRACT -- https://ianlunn.github.io/Hover/ */
+/* Updated code from source: inlcluded text-decoration none */
+/* Forward */
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+  text-decoration: none;
+}
+/* END OF HOVER.CSS EXTRACT */
+
 /* Animation inspired by Code Institute Full Stack Development Course HTML/CSS Project - Love Running */
 @keyframes hero-text-in {
     from {
@@ -295,8 +365,19 @@ footer a:hover {
         margin-left: 10vw;
     }
 }
-/* ----- MEDIA QUERIES ----- */
 
+@keyframes shake-price {
+    from {
+        background-color: #D96A88;
+        color: #e5f3f1;
+    }
+    to {
+        background-color: transparent;
+        color: #2B4038;
+    }
+}
+
+/* ----- MEDIA QUERIES ----- */
 /* Desktop screens */
 @media only screen and (max-width: 1200px) {
     html{
