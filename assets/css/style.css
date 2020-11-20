@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 /* ----- FONTS ----- */
+html {
+    font-size: 18px;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
@@ -33,7 +37,11 @@ hr {
     border-top: solid 3px;
     margin-top: 0.75em;
     margin-bottom: 0.75em;
-    width: 80vw;
+    width: 80%;
+}
+
+.section-heading {
+    font-size: 2.25rem;
 }
 
 /* ----- COLOURS ----- */
@@ -42,6 +50,9 @@ hr {
     background-color: #e5f3f1;
 }
 
+.bg-colour-our-classes {
+    background-color: #D96A88;
+}
 /* ----- NAVIGATION BAR ----- */
 .container-fluid {
     padding: 0;
@@ -103,7 +114,7 @@ footer a {
 }
 
 footer a:hover {
-    color: rgba(0,0,0,.9);
+    color: #D96A88;
 }
 
 /* ----- HOME PAGE - HERO IMAGE ----- */
@@ -161,6 +172,111 @@ footer a:hover {
     color: #2B4038;
 }
 
+.about-us img {
+    width: 225px;
+}
+
+/* ----- HOME PAGE - OUR CLASSES ----- */
+.our-classes {
+    font-size: 1.05rem;
+    padding: 2.5rem 1.75rem 1.5rem;
+    color: #e5f3f1;
+}
+
+.our-classes-card{
+    color: transparent;
+    text-decoration: none;
+    max-width: 12.5rem;
+    min-height: 15.5rem;
+    margin: 30px 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.our-classes-card:hover{
+    color:inherit;
+    text-decoration: inherit;
+}
+
+.our-classes-card button{
+    color: inherit;
+    border-color: inherit;
+}
+
+.our-classes-card > h4 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 1rem;
+}
+
+.our-classes-card > p {
+    padding: 1.5rem 0.75rem;
+}
+
+#salsa-card {
+    background-image: url("../images/salsa-thumbnail.jpg");
+}
+
+#samba-card {
+    background-image: url("../images/samba-thumbnail.jpg");
+}
+
+#zumba-card {
+    background-image: url("../images/zumba-thumbnail.jpg");
+}
+
+#forro-card {
+    background-image: url("../images/forro-thumbnail.jpg");
+}
+
+/* START OF HOVER.CSS EXTRACT -- https://ianlunn.github.io/Hover/ */
+/* Updated code from source: changed background and colour, inlcluded border and boder-radius */
+/* Sweep To Bottom */
+.hvr-sweep-to-bottom {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.hvr-sweep-to-bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(242, 92, 119, 0.253);
+    border: solid #2B4038 3px;
+    border-radius: 8px;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+    color: #e5f3f1;
+}
+.hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+/* END OF HOVER.CSS EXTRACT */
+
 /* Animation inspired by Code Institute Full Stack Development Course HTML/CSS Project - Love Running */
 @keyframes hero-text-in {
     from {
@@ -190,11 +306,30 @@ footer a:hover {
     .about-us img {
         width: 205px;
     }
+
+    .our-classes-card{
+        color: inherit;
+        text-decoration: none;
+        border: solid #2B4038 3px;
+        border-radius: 8px;
+    }
+
+    .our-classes-card button{
+        border-color: #e5f3f1;
+    }
+
+    /* Bug noticed during test a "double-boder" apeared if there is hover functionality on screens below 1200px - code below to avoid */
+    .hvr-sweep-to-bottom:before {
+        border: none;
+    }
+
+    
 }
 
-/* Table screens */
+
+/* Tablet screens */
 @media only screen and (max-width: 992px) {
-       html{
+    html{
         font-size: 14px;
     }
 
@@ -203,9 +338,9 @@ footer a:hover {
     }
 }
 
-/* Mobile and tables screens */
+/* Mobile and tablet screens */
 @media only screen and (max-width: 768px) {
-        html{
+    html{
         font-size: 12px;
     }
 
