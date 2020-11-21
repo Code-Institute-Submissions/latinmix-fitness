@@ -347,6 +347,70 @@ footer a:hover {
 }
 /* END OF HOVER.CSS EXTRACT */
 
+/* ----- HOME PAGE - GALLERY ----- */
+.gallery {
+    padding: 2.5rem 1.75rem 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.gallery>h2 {
+    width: 100%;
+    padding-bottom: 1.8rem; 
+    color: #D96A88;
+}
+
+.gallery-modal-button{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    flex: 20%;
+}
+
+.gallery-modal-button:hover,
+.gallery-modal-button:focus,
+.gallery-modal-button:active{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    box-shadow: none;
+}
+
+.gallery-modal-button>img {
+    max-width: 100%;
+    height: auto;
+    border: solid 2px #e5f3f1;
+    border-radius: 6px;
+}
+
+.gallery-modal-button>img:hover{
+    opacity: 75%;
+}
+
+.modal-header {
+    border: none;
+}
+
+.close {
+    color: #e5f3f1;
+    text-shadow: none;
+    font-size: 2rem;
+}
+
+.close:hover {
+    color: #D96A88;
+}
+
+.modal-content {
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon, .carousel-caption {
+    background-color: rgba(0,0,0,.5);
+    border-radius: 6px;
+}
+
+/* ----- ANIMATIONS ----- */
 /* Animation inspired by Code Institute Full Stack Development Course HTML/CSS Project - Love Running */
 @keyframes hero-text-in {
     from {
@@ -404,9 +468,10 @@ footer a:hover {
         border: none;
     }
 
-    
+    .gallery>button {
+        flex: 30%;
+    }
 }
-
 
 /* Tablet screens */
 @media only screen and (max-width: 992px) {
@@ -416,6 +481,10 @@ footer a:hover {
 
     .about-us img {
         width: 170px;
+    }
+
+    .gallery>button {
+        flex: 45%;
     }
 }
 
@@ -427,5 +496,10 @@ footer a:hover {
 
     .about-us img {
         width: 120px;
+    }
+    /* Gallery responsiveness learned from W3Schools - https://www.w3schools.com/css/css3_flexbox_responsive.asp */
+    .gallery>button {
+        flex: 60%;
+        max-width: 80%;
     }
 }
