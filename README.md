@@ -2,6 +2,8 @@
 
 ![LatinMix Fitness Mockup](# "LatinMix Fitness Mockup") *// Image to be included once site completed*
 
+[Demo of Website](https://belaventer.github.io/latinmix-fitness/).
+
 An intuitive website for LatinMix Fitness, a new dance academy focused on Latin rhythms with a fitness twist.
 The website showcases the offered classes and its respective timetable, membership options, contact and directions information.
 The main goal of the website is to attract new customers.
@@ -111,10 +113,15 @@ On **Mobile** all links are collapsed into the Hamburger Symbol.
 
 - **Classes** Home page feature: 4 images are displayed to link to the Class page.
    On mobile they are stacked with the text and button visible.
-   On table they are 2 side by side with the text and button visible.
+   On tablet they are 2 side by side with the text and button visible.
    On web they are displayed 4 in line and text is invisible. On hover, the text and button becomes visible.
 
 - **Plans** Home page feature: blinking affordable price, small assuring paragraph for the customers and a call to action button linking to the **Plans** page.
+
+- **Gallery** Home page feature: small gallery with five pictures thumbnail that can be clicked and full size is shown on modal. Modal also allows for sliding trought the images.
+   On mobile, the images are stacked.
+   On tablet, the images are on 2 or 3 rows. 
+   On desktop, the images are in line.
 
 ### Features left to implement
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
@@ -140,13 +147,13 @@ The current budget, time constraint and developer knowledge does not allow for t
 ### Libraries and Frameworks
 - [Bootstrap v4.5](https://getbootstrap.com/):
 
-   Used for Navigation Bar and grid layout.
+   Used for Navigation Bar, grid layout, modal and carrousel of Gallery.
 - [Google Fonts](https://fonts.google.com/):
    
    Used to import “Abhaya Libre” and “Open Sans” fonts.
 - [Fonts Awesome v5.15](https://fontawesome.com/):
 
-   Used to include Social Media Icons on the footer and pointer at "Find your plan" button.
+   Used to include Social Media Icons on the footer, pointer at "Find your plan" button and camera at gallery.
 - [Hover.css](https://ianlunn.github.io/Hover/):
 
    Used for hover effect on classes cards and "Find your plan" button on Home page.
@@ -173,7 +180,15 @@ Samba thumbnail picture "Woman in Brazilian Samba Carnival Costume with Colorful
 
 Forró thumbnail picture "Positive ethnic couple in elegant wear dancing on pavement" by Kamille Sampaio obtained from [Canva](https://www.canva.com/photos/MAEGL6Rh1w0-positive-ethnic-couple-in-elegant-wear-dancing-on-pavement/).
 
-Zumba thumbnail picture "Group of Women Doing Exercise Inside The Building" by Andrea Piacquadio obtained from [Pexel](https://www.pexels.com/photo/group-of-women-doing-exercise-inside-the-building-3775566/)
+Zumba thumbnail and Gallery picture two "Group of Women Doing Exercise Inside The Building" by Andrea Piacquadio obtained from [Pexel](https://www.pexels.com/photo/group-of-women-doing-exercise-inside-the-building-3775566/)
+
+Gallery picture one "Young Adult Man Exercising at Dance Class" by Iakov Filimonov obtained from [Canva](https://www.canva.com/photos/MAEN1dkzhHM-young-adult-man-exercising-at-dance-class/)
+
+Gallery picture three "Grayscale Photography of Man Lifting Woman" by Norexy art obtained from [Pexel](https://www.pexels.com/photo/grayscale-photography-of-man-lifting-woman-3034188/).
+
+Gallery picture four "Smiling Latina Enjoying Slow Foxtrot with African American Partner" by Iakov Filimonov obtained from [Canva](https://www.canva.com/photos/MAEN1d6mKSk-smiling-latina-enjoying-slow-foxtrot-with-african-american-partner/)
+
+Gallery picture five "Young Adult Man Exercising at Dance Class" by Iakov Filimonov obtained from [Canva](https://www.canva.com/photos/MAEN1GKfVjg-young-adult-man-exercising-at-dance-class/).
 
 ### Code
 Favicon added as per ["Add A Favicon to A Website in HTML | Learn HTML and CSS | HTML Tutorial | HTML for Beginners"](https://www.youtube.com/watch?v=kEf1xSwX5D8) by Dani Krossing
@@ -191,5 +206,7 @@ Use of animation for hero image text inspired by [Code Institute](https://codein
 [Hover.css](https://ianlunn.github.io/Hover/) used for the Home page classes card hover effect with few modifications. Classes feature inspired by feature on [Sporty - WordPress Gym Theme](https://www.awwwards.com/sites/sporty-wordpress-gym-theme)
     
 [Hover.css](https://ianlunn.github.io/Hover/) used for the "Find your plan" button hover effect with few modifications.
+
+How to justify flex-item learned from [StackOverflow Post](https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties).
 
 ### Acknowledgments
