@@ -1,6 +1,7 @@
 # LatinMix Fitness - Testing Protocol
 
 [Demo of Website](https://belaventer.github.io/latinmix-fitness/).
+
 Refer to [Main project file](https://github.com/belaventer/latinmix-fitness/blob/master/README.md) for further detail.
 
 ## Automated testing
@@ -84,3 +85,11 @@ Refer to [Main project file](https://github.com/belaventer/latinmix-fitness/blob
    | 8.2 | From the Home page, click the first image thumbnail and verify the full-size picture appears on the modal. Close the modal and repeat for the other four images. | Fail - the modal would show the carrousel on the last seen image. Used data-slide-to on the img element to link to correct slide - **Issue fixed** |
    | 8.3 | From the Home page, click any image, use the slide buttons at left and right and verify the previous or next image are shown. | Pass |
    | 8.4 | From the Home page, use the developers tool to decrease the view width. Verify the images stack in 2, then 3 and 5 rows. | Pass |
+
+9. **Contact - Home page** feature:
+
+   | Test No. | Action & spected results | Pass / Fail |
+   | --- | :---:| ---:|
+   | 9.1 | Load the Home page and verify the **Contact** section is visible. | Pass |
+   | 9.2 | Verify Google Maps is displayed and can be interacted with. | Pass |
+   | 9.3 | From the Home page, use the developers tool to decrease the view width. Verify the sections content do not break. | Pass |

@@ -74,7 +74,7 @@ On the **Home** page:
 - Below the "About Us", there is the “Our classes” section. Four images spaced evenly on the page representing each style.
 - Below the “Our classes” section, there is the “Find your Plan” call to action. This will link to the Plans page.
 - Below "Find your Plan", a small gallery to reinforce business credibility.
-- The last section of the Home page is the “Where to find us”. This will be an embedded google maps with pinned address of facility.
+- The last section of the Home page is the “Join Us” with the business address.
 
 On each **Class** page:
 - There will be a embedded video player showing the dance.
@@ -122,6 +122,8 @@ On **Mobile** all links are collapsed into the Hamburger Symbol.
    On mobile, the images are stacked.
    On tablet, the images are on 2 or 3 rows. 
    On desktop, the images are in line.
+
+- **Contact** Home page feature: small section with business adress and embedded Google Maps.
 
 ### Features left to implement
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
@@ -208,5 +210,7 @@ Use of animation for hero image text inspired by [Code Institute](https://codein
 [Hover.css](https://ianlunn.github.io/Hover/) used for the "Find your plan" button hover effect with few modifications.
 
 How to justify flex-item learned from [StackOverflow Post](https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties).
+
+Source with API key for Google Maps iframe [MAPS.ie](https://www.maps.ie/create-google-map/).
 
 ### Acknowledgments
