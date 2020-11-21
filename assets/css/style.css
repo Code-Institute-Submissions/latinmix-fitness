@@ -410,6 +410,45 @@ footer a:hover {
     border-radius: 6px;
 }
 
+/* ----- HOME PAGE - CONTACT ----- */
+.contact-info {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2.5rem 1.75rem 1.5rem;
+    background-color: #D96A88;
+    color: #e5f3f1;
+    justify-content: center;
+}
+
+.contact-info h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1.25rem;
+}
+
+.contact-info-map,
+.contact-info-text {
+    display: inline-block;
+}
+.contact-info-map {
+    text-align: right;
+    max-width: 20em;
+    height: 20em;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    border-radius: 2.5px;
+}
+
+.contact-info-text {
+    align-self: center;
+    padding-left: 5px;
+}
+
+.contact-info-text address{
+    font-style: italic;
+    padding-top: 5px;
+    padding-left: 5px;
+}
 /* ----- ANIMATIONS ----- */
 /* Animation inspired by Code Institute Full Stack Development Course HTML/CSS Project - Love Running */
 @keyframes hero-text-in {
