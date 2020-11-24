@@ -93,3 +93,4 @@ Refer to [Main project file](https://github.com/belaventer/latinmix-fitness/blob
    | 9.1 | Load the Home page and verify the **Contact** section is visible. | Pass |
    | 9.2 | Verify Google Maps is displayed and can be interacted with. | Pass |
    | 9.3 | From the Home page, use the developers tool to decrease the view width. Verify the sections content do not break. | Pass |
+   | 9.4 | Repeat steps 1 to 3 on the Contact page. | Pass |

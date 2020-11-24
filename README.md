@@ -96,7 +96,7 @@ On the **Contact** page:
 - Users will also be presented with option to register for the business newsletter. 
 - On mobile the options will be displayed in block (vertically).
 - On table and desktop, two options will be displayed in line (horizontaly).
-- Studio address and map will be displayed under "Contact Us Directly" option.
+
 
 ### Existing Features *// to complete during implementation*
 - **Navigation Bar** feature: on the left side, there is the **Header Logo** linking back to the **Home** page.
@@ -123,7 +123,7 @@ On **Mobile** all links are collapsed into the Hamburger Symbol.
    On tablet, the images are on 2 or 3 rows. 
    On desktop, the images are in line.
 
-- **Contact** Home page feature: small section with business adress and embedded Google Maps.
+- **Contact** Home page and Contact page feature: small section with business adress and embedded Google Maps.
 
 ### Features left to implement
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
