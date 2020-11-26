@@ -125,6 +125,9 @@ On **Mobile** all links are collapsed into the Hamburger Symbol.
 
 - **Contact** Home page and Contact page feature: small section with business adress and embedded Google Maps.
 
+- **Contact Forms** Contact page feature: two forms are available on the contact page. One is for miscellanious queries and the second is an option to subscribe for the Newsletter.
+All fields are required on both forms.
+
 ### Features left to implement
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
 Once the channel is created, the Footer of every page must be updated with the YouTube account and link.
@@ -212,5 +215,7 @@ Use of animation for hero image text inspired by [Code Institute](https://codein
 How to justify flex-item learned from [StackOverflow Post](https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties).
 
 Source with API key for Google Maps iframe [MAPS.ie](https://www.maps.ie/create-google-map/).
+
+Use of :focus:active for click and hold mouse button from [StackOverflow Post](https://stackoverflow.com/questions/16715274/what-is-the-mouse-down-selector-in-css).
 
 ### Acknowledgments

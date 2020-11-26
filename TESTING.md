@@ -86,7 +86,7 @@ Refer to [Main project file](https://github.com/belaventer/latinmix-fitness/blob
    | 8.3 | From the Home page, click any image, use the slide buttons at left and right and verify the previous or next image are shown. | Pass |
    | 8.4 | From the Home page, use the developers tool to decrease the view width. Verify the images stack in 2, then 3 and 5 rows. | Pass |
 
-9. **Contact - Home page** feature:
+9. **Contact - Home and Contact page** feature:
 
    | Test No. | Action & spected results | Pass / Fail |
    | --- | :---:| ---:|
@@ -94,3 +94,19 @@ Refer to [Main project file](https://github.com/belaventer/latinmix-fitness/blob
    | 9.2 | Verify Google Maps is displayed and can be interacted with. | Pass |
    | 9.3 | From the Home page, use the developers tool to decrease the view width. Verify the sections content do not break. | Pass |
    | 9.4 | Repeat steps 1 to 3 on the Contact page. | Pass |
+
+10. **Forms - Contact page** feature:
+
+   | Test No. | Action & spected results | Pass / Fail |
+   | --- | :---:| ---:|
+   | 10.1 | Load the Contact page and verify the **Contact Us** section is visible. | Pass |
+   | 10.2 | Click on the first form button without filling any of the fiels. Verify the form is not sent and default tooltip is shown. | Pass |
+   | 10.3 | Enter the name on the first form and click the button. Verify the form is not sent and default tooltip is shown. | Pass |
+   | 10.4 | Enter an invalid email on the first form and verify the default tooltip is shown. | Pass |
+   | 10.5 | Enter a valid email on the first form and click the button. Verify the form is not sent and default tooltip is shown. | Pass |
+   | 10.6 | Click on the Selection field and verify four different options are available. Chose one option and click the button. Verify the form is not sent and default tooltip is shown.| Pass |
+   | 10.7 | Enter some text on the last field and click the form button. Verify the form is sent. | Pass |
+   | 10.8 | Repeat steps 2 to 4 on the second form and verify the results. | Pass |
+   | 10.9 | Enter a valid email on the first form and click the button. Verify the form is sent. | Pass |
+   | 10.10 | From the Contact page, use the developers tool to decrease the view width. Verify the sections content do not break. | Pass |
+
