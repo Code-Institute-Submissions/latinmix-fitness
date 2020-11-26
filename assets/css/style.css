@@ -47,7 +47,8 @@ hr {
 /* ----- COLOURS ----- */
 .bg-colour-navbar,
 .bg-colour-footer,
-.bg-colour-plans {
+.bg-colour-plans,
+.bg-colour-newsletter{
     background-color: #e5f3f1;
 }
 .bg-colour-contact-info, 
@@ -449,7 +450,63 @@ footer a:hover {
     padding-left: 5px;
 }
 
-/* ----- HOME PAGE - BUSINESS INFO ----- */
+/* ----- CONTACT PAGE - CONTACT US ----- */
+.contact-us {
+    font-size:1.25em;
+    color: #D96A88;
+    padding: 2.5rem 1.75rem 3rem;
+}
+
+.contact-us h2, 
+.contact-us p {
+    text-align: center;
+}
+
+.contact-us h4 {
+    padding: 0.75rem 0.75rem 0;
+}
+
+.contact-us form{
+    padding: 1.5em 0.75em 2em;
+}
+
+.newsletter {
+    color: #212529;
+    border-radius: 3.5px;
+    font-size: 0.75em;
+    height: 100%;
+}
+
+.contact-us button {
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    padding: 0.85em 1.5em;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* :not(.disable) copied from the Bootstrap css to overwrite specificity */
+/* Use of :focus:active for click and hold mouse button from https://stackoverflow.com/questions/16715274/what-is-the-mouse-down-selector-in-css */
+.contact-us form button:hover,
+.contact-us form button:focus,
+.contact-us form button:not(:disabled):not(.disabled):active,
+.contact-us form button:focus:not(:disabled):not(.disabled):active {
+    background-color: #D96A88;
+    border-color: #D96A88;
+    box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+}
+
+.contact-us form option:visited{
+    background-color: #D96A88;
+}
+
+.contact-us form *:focus{
+    border-color: #D96A88;
+    box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+}
+
+/* ----- CONTACT PAGE - BUSINESS INFO ----- */
 .business-info {
     padding: 2.5rem 1.75rem 1.5rem;
     color: #e5f3f1;
