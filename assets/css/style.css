@@ -44,6 +44,23 @@ hr {
     font-size: 2.25rem;
 }
 
+.btn-grey-pink {
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    padding: 0.85em 1.5em;
+    display: block;
+    margin: 15px auto;
+    color: #e5f3f1;
+}
+
+.btn-grey-pink:hover,
+.btn-grey-pink:focus,
+.btn-grey-pink:active {
+    background-color: #D96A88;
+    border-color: #D96A88;
+    box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+    color: #e5f3f1;
+}
 /* ----- COLOURS ----- */
 .bg-colour-navbar,
 .bg-colour-footer,
@@ -55,6 +72,7 @@ hr {
 .bg-colour-our-classes {
     background-color: #D96A88;
 }
+
 /* ----- NAVIGATION BAR ----- */
 .container-fluid {
     padding: 0;
@@ -485,7 +503,6 @@ footer a:hover {
     margin: 0 auto;
 }
 
-
 /* :not(.disable) copied from the Bootstrap css to overwrite specificity */
 /* Use of :focus:active for click and hold mouse button from https://stackoverflow.com/questions/16715274/what-is-the-mouse-down-selector-in-css */
 .contact-us form button:hover,
@@ -601,23 +618,64 @@ footer a:hover {
     animation-fill-mode: backwards;
 }
 
+/* Specificity required to ovewrite no-gutters padding */
 .our-plans > a.col-auto {
-    background-color: rgba(0,0,0,.5);
-    border: none;
     padding: 0.85em 1.5em;
-    display: block;
-    margin: 15px auto;
-    color: #e5f3f1;
     align-self: baseline;
 }
 
-.our-plans a:hover,
-.our-plans a:focus,
-.our-plans a:active {
-    background-color: #D96A88;
-    border-color: #D96A88;
-    box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
-    color: #e5f3f1;
+/* ----- CLASSES PAGE ----- */
+
+/* Keeping teh footer at the bootom solution found in https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f */
+/* Thanks to my mentor Ignatius Ukwuoma for this link */
+.classes-body-container {
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+    flex-flow: column wrap;
+    align-items: stretch;
+}
+
+.classes-info {
+    flex-grow: 1;
+    font-size: 1.25rem;
+    padding: 1.5rem 1rem;
+    color:  #D96A88;
+}
+
+.classes-info h2{
+    font-size: 3.5rem;
+    padding-bottom: 20px;
+    text-align: center;
+    align-self: center;
+}
+
+.classes-videos {
+    height: 28vw;
+    margin-top: 60px;
+}
+
+.classes-info > div.col-12{
+    padding: 0 1.45rem;
+}
+
+.classes-info p{
+    text-align: justify;
+    margin-bottom: 1.2rem;
+}
+
+.classes-info li {
+    list-style-type: none;
+}
+
+.classes-info li:first-of-type {
+    margin-bottom: 1rem;
+}
+
+/* Specificity required to ovewrite no-gutters padding */
+.classes-info a.col-auto {
+    padding: 0.85em 1.2em;
+    align-self: baseline;
 }
 
 /* ----- ANIMATIONS ----- */
@@ -690,6 +748,12 @@ footer a:hover {
     .gallery>button {
         flex: 30%;
     }
+        
+    .classes-videos {
+        margin-top: 0;
+        margin-bottom: 25px;
+        height: 56vw;
+    }
 }
 
 /* Tablet screens */
@@ -716,6 +780,7 @@ footer a:hover {
     .about-us img {
         width: 120px;
     }
+
     /* Gallery responsiveness learned from W3Schools - https://www.w3schools.com/css/css3_flexbox_responsive.asp */
     .gallery>button {
         flex: 60%;
