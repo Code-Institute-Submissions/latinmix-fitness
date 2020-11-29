@@ -127,8 +127,10 @@ On **Mobile** all links are collapsed into the Hamburger Symbol.
 - **Contact Forms** Contact page feature: two forms are available on the contact page. One is for miscellanious queries and the second is an option to subscribe for the Newsletter.
 All fields are required on both forms.
 
-- **Plan Options** Plans page feature: the tree available options will appear one after another once the page is loaded.
+- **Plan Options** Plans page feature: the three available options will appear one after another once the page is loaded.
 The button at the bottom of the page will re-direct to the "Contact" page.
+
+- **Video** Classes page feature: the embedded Youube video is available on each Class page which the user can interact as wishes.
 
 ### Features left to implement
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
@@ -176,6 +178,17 @@ Refer to [TESTING.md](https://github.com/belaventer/latinmix-fitness/blob/master
 ## Deployment *// to be completed once project is nearly done*
 
 ## Credit
+### Content
+Salsa page content taken from [Wikipedia](https://en.wikipedia.org/wiki/Salsa_(dance)).
+
+Samba page content taken from [Wikipedia](https://en.wikipedia.org/wiki/Samba_(Brazilian_dance)).
+
+Zumba page content taken from [Wikipedia](https://en.wikipedia.org/wiki/Zumba).
+
+Forró page content taken from [Wikipedia](https://en.wikipedia.org/wiki/Forr%C3%B3).
+
+All other content was written by the developer.
+
 ### Media
 Hero image photograph by Isaiah McClean “Welcome to Burlesque” obtained from [Unplash](https://unsplash.com/photos/j9PpIy_x4EE). The image resizing and hue adjustments performed by the developer with [Clip Studio Paint](https://www.clipstudio.net/en/).
 
@@ -196,6 +209,14 @@ Gallery picture three "Grayscale Photography of Man Lifting Woman" by Norexy art
 Gallery picture four "Smiling Latina Enjoying Slow Foxtrot with African American Partner" by Iakov Filimonov obtained from [Canva](https://www.canva.com/photos/MAEN1d6mKSk-smiling-latina-enjoying-slow-foxtrot-with-african-american-partner/)
 
 Gallery picture five "Young Adult Man Exercising at Dance Class" by Iakov Filimonov obtained from [Canva](https://www.canva.com/photos/MAEN1GKfVjg-young-adult-man-exercising-at-dance-class/).
+
+Salsa video by Plesni Centar Mimbao on [Youtube](https://www.youtube.com/watch?v=tBEc9Kni6I0&feature=emb_title).
+
+Samba video by Vanesca Pascaleon on [Youtube](https://8000-e79d1313-f9ce-4d13-98bd-0b202ed2904c.ws-eu01.gitpod.io/samba.html).
+
+Zumba video by Don Omar on [Youtube](https://www.youtube.com/watch?v=8HpG0l9cLos&feature=emb_title).
+
+Forró video by Bailando Escola de Dança de Salão - Fortaleza on [Youtube](https://www.youtube.com/watch?v=rkJ0Xn5U5Go).
 
 ### Code
 Favicon added as per ["Add A Favicon to A Website in HTML | Learn HTML and CSS | HTML Tutorial | HTML for Beginners"](https://www.youtube.com/watch?v=kEf1xSwX5D8) by Dani Krossing
@@ -221,5 +242,7 @@ Source with API key for Google Maps iframe [MAPS.ie](https://www.maps.ie/create-
 Use of :focus:active for click and hold mouse button from [StackOverflow Post](https://stackoverflow.com/questions/16715274/what-is-the-mouse-down-selector-in-css).
 
 Keeping teh footer at the bootom solution found in [DEV post](https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f).
+
+Embbeded video steps from [Youtube Support](https://support.google.com/youtube/answer/171780?hl=en).
 
 ### Acknowledgments

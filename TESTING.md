@@ -117,3 +117,12 @@ Refer to [Main project file](https://github.com/belaventer/latinmix-fitness/blob
    | 11.1 | Load the Plans page and verify the three options appear one after the other. | Pass |
    | 11.2 | Hover over the "Contact us now and book your first class" and verify the button changes colour. Click the button and verify the **Contact** page is loaded. | Pass |
    | 11.3 | Return to the **Plans** page, use the developers tool to decrease the view width. Verify the sections content do not break. | Pass |
+
+12. **Video - Classes page** feature:
+
+   | Test No. | Action & spected results | Pass / Fail |
+   | --- | :---:| ---:|
+   | 12.1 | Load the Salsa Class page and verify the video player is available and can be interacted with. | Pass |
+   | 12.2 | Hover over the "Contact us" and verify the button changes colour. Click the button and verify the **Contact** page is loaded. | Pass |
+   | 12.3 | Return to the **Salsa Class** page, use the developers tool to decrease the view width. Verify the sections content do not break. | Pass |
+   | 12.4 | Repeat steps 1 to 3 for the other three classes pages and verify the results. | Pass |
