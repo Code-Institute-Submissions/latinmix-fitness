@@ -52,6 +52,7 @@ The structure for every remaining page will be user friendly and expand on the H
 
 #### Deviations from planed wireframes
 - Footer information for mobile screens was stacked instead of shown inline as the content would not fit.
+- Plans will not have the images with the option as initially planned and the mobile view will not be restrained at 1 view height, as content would be too small.
 
 ### Surface
 #### Colour
@@ -84,12 +85,10 @@ On each **Class** page:
 - The entire page should fit the screen height to follow aproach of small unit of information.
 
 On the **Plans** page:
-- The three plans options will be displayed next to a emotive image.
-- The flow of information will fall left to right and back to left to be dynamic.
-- On desktop version, images will increase in size sligtly, one after the other.
+- The three plans options will be displayed.
+- The flow of information will fall right to left and back to right to be dynamic.
 - Brief text to explain payment methods at the bottom.
 - Lastly a button to "Contact Us" and book a class.
-- The entire page should fit the screen height to follow aproach of small unit of information.
 
 On the **Contact** page:
 - The user has two options of contact: sending a query via form or contacting diretly from details provided.
@@ -127,6 +126,9 @@ On **Mobile** all links are collapsed into the Hamburger Symbol.
 
 - **Contact Forms** Contact page feature: two forms are available on the contact page. One is for miscellanious queries and the second is an option to subscribe for the Newsletter.
 All fields are required on both forms.
+
+- **Plan Options** Plans page feature: the tree available options will appear one after another once the page is loaded.
+The button at the bottom of the page will re-direct to the "Contact" page.
 
 ### Features left to implement
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
@@ -217,5 +219,7 @@ How to justify flex-item learned from [StackOverflow Post](https://stackoverflow
 Source with API key for Google Maps iframe [MAPS.ie](https://www.maps.ie/create-google-map/).
 
 Use of :focus:active for click and hold mouse button from [StackOverflow Post](https://stackoverflow.com/questions/16715274/what-is-the-mouse-down-selector-in-css).
+
+Keeping teh footer at the bootom solution found in [DEV post](https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f).
 
 ### Acknowledgments

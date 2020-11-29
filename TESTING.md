@@ -110,3 +110,10 @@ Refer to [Main project file](https://github.com/belaventer/latinmix-fitness/blob
    | 10.9 | Enter a valid email on the first form and click the button. Verify the form is sent. | Pass |
    | 10.10 | From the Contact page, use the developers tool to decrease the view width. Verify the sections content do not break. | Pass |
 
+11. **Plans - Plans page** feature:
+
+   | Test No. | Action & spected results | Pass / Fail |
+   | --- | :---:| ---:|
+   | 11.1 | Load the Plans page and verify the three options appear one after the other. | Pass |
+   | 11.2 | Hover over the "Contact us now and book your first class" and verify the button changes colour. Click the button and verify the **Contact** page is loaded. | Pass |
+   | 11.3 | Return to the **Plans** page, use the developers tool to decrease the view width. Verify the sections content do not break. | Pass |
