@@ -497,10 +497,6 @@ footer a:hover {
     box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
 }
 
-.contact-us form option:visited{
-    background-color: #D96A88;
-}
-
 .contact-us form *:focus{
     border-color: #D96A88;
     box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
@@ -547,6 +543,83 @@ footer a:hover {
     
 }
 
+/* ----- PLANS PAGE ----- */
+
+/* Keeping teh footer at the bootom solution found in https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f */
+/* Thanks to my mentor Ignatius Ukwuoma for this link */
+.contact-body-container {
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+    flex-flow: column wrap;
+    align-items: stretch;
+}
+
+.our-plans {
+    flex-grow: 1;
+    font-size: 1.50rem;
+    padding: 2.5rem 1.75rem 1.5rem;
+    text-align: center;
+}
+
+.our-plans h2{
+    font-size: 3.5rem;
+    padding-bottom: 20px;
+    color: #2B4038;
+}
+
+.our-plans p.col-12{
+    align-self: baseline;
+    color: #2B4038;
+}
+
+.plans-casual,
+.plans-dancer,
+.plans-pro {
+    border-radius: 20px;
+    background-color: #D96A88;
+    color: #e5f3f1;
+    box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 80px;
+    padding: 20px 0;
+    align-self: baseline;
+}
+
+.plans-casual {
+    animation: show-item 2s ease-in;
+}
+
+.plans-dancer {
+    animation: show-item 2s ease-in 1s;
+    animation-fill-mode: backwards;
+}
+
+.plans-pro {
+    animation: show-item 2s ease-in 1.5s;
+    animation-fill-mode: backwards;
+}
+
+.our-plans > a.col-auto {
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    padding: 0.85em 1.5em;
+    display: block;
+    margin: 15px auto;
+    color: #e5f3f1;
+    align-self: baseline;
+}
+
+.our-plans a:hover,
+.our-plans a:focus,
+.our-plans a:active {
+    background-color: #D96A88;
+    border-color: #D96A88;
+    box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+    color: #e5f3f1;
+}
+
 /* ----- ANIMATIONS ----- */
 /* Animation inspired by Code Institute Full Stack Development Course HTML/CSS Project - Love Running */
 @keyframes hero-text-in {
@@ -575,6 +648,15 @@ footer a:hover {
     to {
         background-color: transparent;
         color: #2B4038;
+    }
+}
+
+@keyframes show-item {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
     }
 }
 
