@@ -62,27 +62,27 @@ The colour palette used is extracted from the hero image and have tones of green
 #### Typography
 Headings will follow the logo font-family “Abhaya Libre” with slight increased letter spacing for better readability.
 All other text will be set to font-family “Open Sans”.
-Default fall-back font-family: "sans-Serif".
+Default fallback font-family: "sans-Serif".
 
-## Features *// currently planned features – section to be reviewed during implementation*
+## Features
 On **every page** there is a Navigation Bar at the top of the page. 
 
 On **every page** there is a Footer at the very bottom of the content.
 
 On the **Home** page:
 - At the top, full width hero image and inviting text.
-- Below the hero image, a small compeling "About Us" section.
+- Below the hero image, a small compelling "About Us" section.
 - Below the "About Us", there is the “Our classes” section. Four images spaced evenly on the page representing each style.
 - Below the “Our classes” section, there is the “Find your Plan” call to action. This will link to the Plans page.
 - Below "Find your Plan", a small gallery to reinforce business credibility.
 - The last section of the Home page is the “Join Us” with the business address.
 
 On each **Class** page:
-- There will be a embedded video player showing the dance.
+- There will be an embedded video player showing the dance.
 - Bellow video player there is a short description on the dance style.
 - The class timetable is further detailed with the class time.
 - Lastly a button to "Contact Us" and book a class.
-- The entire page should fit the screen height to follow aproach of small unit of information.
+- The entire page should fit the screen height to follow approach of small unit of information.
 
 On the **Plans** page:
 - The three plans options will be displayed.
@@ -91,10 +91,10 @@ On the **Plans** page:
 - Lastly a button to "Contact Us" and book a class.
 
 On the **Contact** page:
-- The user has two options of contact: sending a query via form or contacting diretly from details provided.
+- The user has two options of contact: sending a query via form or contacting directly from details provided.
 - Users will also be presented with option to register for the business newsletter. 
 - On mobile the options will be displayed in block (vertically).
-- On table and desktop, two options will be displayed in line (horizontaly).
+- On table and desktop, two options will be displayed in line (horizontally).
 
 
 ### Existing Features *// to complete during implementation*
@@ -113,24 +113,24 @@ On **Mobile** all links are collapsed into the Hamburger Symbol.
 - **Classes** Home page feature: 4 images are displayed to link to the Class page.
    On mobile they are stacked with the text and button visible.
    On tablet they are 2 side by side with the text and button visible.
-   On web they are displayed 4 in line and text is invisible. On hover, the text and button becomes visible.
+   On web they are displayed 4 in line and text is invisible. On hover, the text and button become visible.
 
 - **Plans** Home page feature: blinking affordable price, small assuring paragraph for the customers and a call to action button linking to the **Plans** page.
 
-- **Gallery** Home page feature: small gallery with five pictures thumbnail that can be clicked and full size is shown on modal. Modal also allows for sliding trought the images.
+- **Gallery** Home page feature: small gallery with five pictures thumbnail that can be clicked, and full size is shown on modal. Modal also allows for sliding through the images.
    On mobile, the images are stacked.
    On tablet, the images are on 2 or 3 rows. 
    On desktop, the images are in line.
 
-- **Contact** Home page and Contact page feature: small section with business adress and embedded Google Maps.
+- **Contact** Home page and Contact page feature: small section with business address and embedded Google Maps.
 
-- **Contact Forms** Contact page feature: two forms are available on the contact page. One is for miscellanious queries and the second is an option to subscribe for the Newsletter.
+- **Contact Forms** Contact page feature: two forms are available on the contact page. One is for miscellaneous queries and the second is an option to subscribe for the Newsletter.
 All fields are required on both forms.
 
 - **Plan Options** Plans page feature: the three available options will appear one after another once the page is loaded.
 The button at the bottom of the page will re-direct to the "Contact" page.
 
-- **Video** Classes page feature: the embedded Youube video is available on each Class page which the user can interact as wishes.
+- **Video** Classes page feature: the embedded Youtube video is available on each Class page which the user can interact as wishes.
 
 ### Features left to implement
 Currently the business does not have a YouTube Channel, but it plans to create one in the future.
@@ -153,7 +153,10 @@ The current budget, time constraint and developer knowledge does not allow for t
 - HTML | HTML5
 - CSS | CSS3
 
-### Libraries and Frameworks
+### Libraries, Frameworks & Programs
+- [Gitpod](https://gitpod.io/workspaces/):
+
+    The developer used Gitpod as the IDE for building the website.
 - [Bootstrap v4.5](https://getbootstrap.com/):
 
    Used for Navigation Bar, grid layout, modal and carrousel of Gallery.
@@ -166,8 +169,6 @@ The current budget, time constraint and developer knowledge does not allow for t
 - [Hover.css](https://ianlunn.github.io/Hover/):
 
    Used for hover effect on classes cards and "Find your plan" button on Home page.
-
-### Programs
 - [Clip Studio Paint](https://www.clipstudio.net/en/):
 
    Used for images resizing and colour adjustments.
@@ -175,7 +176,34 @@ The current budget, time constraint and developer knowledge does not allow for t
 ## Testing
 Refer to [TESTING.md](https://github.com/belaventer/latinmix-fitness/blob/master/TESTING.md) file for testing details.
 
-## Deployment *// to be completed once project is nearly done*
+## Deployment
+This project was developed using the Gitpod IDE, committed to git and pushed to GitHub.
+
+### Deploy to GitHub Pages from GitHub Repository:
+- Login to GitHub.
+- Search for the repository belaventer/latimix-fitness and select it.
+- Select Settings on the Menu under the Reposity name.
+- Under "GitHub Pages", use Branch drop-down menu and select Master Branch as the publishing source.
+- The page will be refreshed and the website is deployed. Return to GitHub Pages section to view the link to the deployed website.
+
+At the moment of submitting this Milestone project the Development Branch and Master Branch are identical.
+
+### Run the project locally:
+- Ensure you have Gipod Browser Extention for Chrome and you are logged in Gipod with your GitHub account. 
+- Login to GitHub.
+- Search and select the GitHub repository belaventer/latinmix-fitness.
+- Click the green "Gitpod" button in the top right corner of the respository.
+- A new Gitpod workspace will be created from the repo in GitHub and you can start working locally.
+
+### Dowload project to local IDE:
+- Login to GitHub.
+- Search for the repository belaventer/latimix-fitness and select it.
+- Under the repository name, click on Code.
+- In the Clone with HTTPs section, copy the clone URL for the repository.
+- In your local IDE open the terminal.
+- Change the current working directory to the desired cloned location.
+- From the terminal run git clone with the copied URL.
+- Your local clone will be created and you can start working locally.
 
 ## Credit
 ### Content
@@ -241,8 +269,18 @@ Source with API key for Google Maps iframe [MAPS.ie](https://www.maps.ie/create-
 
 Use of :focus:active for click and hold mouse button from [StackOverflow Post](https://stackoverflow.com/questions/16715274/what-is-the-mouse-down-selector-in-css).
 
-Keeping teh footer at the bootom solution found in [DEV post](https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f).
+Keeping the footer at the botoom solution found in [DEV post](https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f).
 
-Embbeded video steps from [Youtube Support](https://support.google.com/youtube/answer/171780?hl=en).
+Embedded video steps from [Youtube Support](https://support.google.com/youtube/answer/171780?hl=en).
 
-### Acknowledgments
+### Acknowledgment
+I'd like to thank my mentor Ignatius Ukwuoma for the valuable feedback and advises.
+
+I'd also like to thanks Anna Greaves and Jim Morel for the helpful talks on MS1 planning and README file writing.
+
+## Disclaimer
+This project purpose is only educational and the gym "LatinMix Fitness" portraited is a fictional business.
+
+## Notes on Commits
+Initially I have understood each new file required its own "Initial Commit", for that reason there are multiple "Initial Commits" on the revision history.
+My Mentor has explained each project, conventionally, only have one "Initial Commit". This is a lesson learned to be applied for future projects.
