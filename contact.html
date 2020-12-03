@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body class="container-fluid">
+<body class="container-fluid fullheight-body-container">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light font-navbar bg-colour-navbar">
             <a class="navbar-brand" href="index.html">
@@ -45,89 +45,89 @@
             </div>
         </nav>
     </header>
-    <section>
+    <main>
     <!-- Contact Us -->
-    <div class="row no-gutters justify-content-around contact-us">
-        <h2 class="col-12 section-heading">Contact Us</h2>
-        <form class="col-10 contact-form col-sm-9 col-md-5">
-            <div class="form-group">
-                <label for="clientname">Name:</label>
-                <input type="text" class="form-control" id="clientname" name="clientname" placeholder="Full name" required>
-            </div>
-            <div class="form-group">
-                <label for="clientemail">Email:</label>
-                <input type="email" class="form-control" id="clientemail" name="clientemail" placeholder="email@example.com" required>
-            </div>
-            <div class="form-group">
-                <label for="contactreason">Select contact reason:</label>
-                <select class="form-control" id="contactreason" name="contactreason">
-                    <option value="classes">Classes queries</option>
-                    <option value="payment">Payment options queries</option>
-                    <option value="suggestion">Register a suggestion/complaint</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="clienttext">Enter your message below:</label>
-                <textarea class="form-control" id="clienttext" name="clienttext" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send!</button>
-        </form>
-        <div class="col-10 col-sm-9 col-md-4 align-self-center newsletter bg-colour-newsletter">
-            <h4>While you are here...</h4>
-            <form>
-                <p>Subscribe to our newsletter</p>
+        <section class="row no-gutters justify-content-around contact-us">
+            <h2 class="col-12 section-heading">Contact Us</h2>
+            <form class="col-10 contact-form col-sm-9 col-md-5">
                 <div class="form-group">
-                    <label for="clientnamenews">Name:</label>
-                    <input type="text" class="form-control" id="clientnamenews" name="clientnamenews" placeholder="Full name" required>
+                    <label for="clientname">Name:</label>
+                    <input type="text" class="form-control" id="clientname" name="clientname" placeholder="Full name" required>
                 </div>
                 <div class="form-group">
-                    <label for="clientemailnews">Email:</label>
-                    <input type="email" class="form-control" id="clientemailnews" name="clientemailnews" placeholder="email@example.com" required>
+                    <label for="clientemail">Email:</label>
+                    <input type="email" class="form-control" id="clientemail" name="clientemail" placeholder="email@example.com" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
+                <div class="form-group">
+                    <label for="contactreason">Select contact reason:</label>
+                    <select class="form-control" id="contactreason" name="contactreason">
+                        <option value="classes">Classes queries</option>
+                        <option value="payment">Payment options queries</option>
+                        <option value="suggestion">Register a suggestion/complaint</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="clienttext">Enter your message below:</label>
+                    <textarea class="form-control" id="clienttext" name="clienttext" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send!</button>
             </form>
-        </div>
-    </div>
-    <!-- Business Details -->
-    <div class="business-info bg-colour-contact-info">
-        <div class="row no-gutters">
-            <h2 class="col-12 section-heading uppercase">Business Details</h2>
-        </div>
-        <!-- Source with API key for iframe from https://www.maps.ie/create-google-map/ -->
-        <div class="row no-gutters justify-content-center">
-            <div class="col-12 col-sm-6 align-self-center">
-                <div class="row no-gutters">
-                    <div class="col-5 col-md-3">
-                        <p class="business-contact-head uppercase">Phone:</p>
+            <div class="col-10 col-sm-9 col-md-4 align-self-center newsletter bg-colour-newsletter">
+                <h4>While you are here...</h4>
+                <form>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="form-group">
+                        <label for="clientnamenews">Name:</label>
+                        <input type="text" class="form-control" id="clientnamenews" name="clientnamenews" placeholder="Full name" required>
                     </div>
-                    <div class="col-7 col-md-9">
-                        <p class="business-contact-info">+353 55 555-7878</p>
+                    <div class="form-group">
+                        <label for="clientemailnews">Email:</label>
+                        <input type="email" class="form-control" id="clientemailnews" name="clientemailnews" placeholder="email@example.com" required>
                     </div>
-                </div>
-                <div class="row no-gutters">
-                    <div class="col-5 col-md-3">
-                        <p class="business-contact-head uppercase">Email:</p>
-                    </div>
-                    <div class="col-7 col-md-9">
-                        <p class="business-contact-info">contact@latinmix.com</p>
-                    </div>
-                </div>
-                <div class="row no-gutters business-info-address">
-                    <address class="col-12">
-                        LatinMix Fitness,<br>
-                        Pium, Parnamirim,<br>
-                        Natal,<br>
-                        Rio Grande do Norte,<br>
-                        Brazil<br>
-                    </address>
-                </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
             </div>
-            <iframe title="Mab location of LatinMix Fitness" class="col business-info-contact business-info-map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Pium,%20Rio%20grande%20do%20Norte%20Brasil+(LatinMix%20Ftiness)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-            </iframe>
-        </div>
-    </div>    
-    </section>
+        </section>
+    <!-- Business Details -->
+        <section class="business-info bg-colour-contact-info">
+            <div class="row no-gutters">
+                <h2 class="col-12 section-heading uppercase">Business Details</h2>
+            </div>
+            <!-- Source with API key for iframe from https://www.maps.ie/create-google-map/ -->
+            <div class="row no-gutters justify-content-center">
+                <div class="col-12 col-sm-6 align-self-center">
+                    <div class="row no-gutters">
+                        <div class="col-5 col-md-3">
+                            <p class="business-contact-head uppercase">Phone:</p>
+                        </div>
+                        <div class="col-7 col-md-9">
+                            <p class="business-contact-info">+353 55 555-7878</p>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-5 col-md-3">
+                            <p class="business-contact-head uppercase">Email:</p>
+                        </div>
+                        <div class="col-7 col-md-9">
+                            <p class="business-contact-info">contact@latinmix.com</p>
+                        </div>
+                    </div>
+                    <div class="row no-gutters business-info-address">
+                        <address class="col-12">
+                            LatinMix Fitness,<br>
+                            Pium, Parnamirim,<br>
+                            Natal,<br>
+                            Rio Grande do Norte,<br>
+                            Brazil<br>
+                        </address>
+                    </div>
+                </div>
+                <iframe title="Mab location of LatinMix Fitness" class="col business-info-contact business-info-map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Pium,%20Rio%20grande%20do%20Norte%20Brasil+(LatinMix%20Ftiness)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+            </div>
+        </section>    
+    </main>
     <footer class="footer-container bg-colour-footer">
         <div class="row no-gutters">
             <div class="col-12 col-md-2 footer-head uppercase">
