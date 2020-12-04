@@ -1,6 +1,6 @@
 # LatinMix Fitness
 
-![LatinMix Fitness Mockup](# "LatinMix Fitness Mockup") *// Image to be included once site completed*
+![LatinMix Fitness Mockup](https://github.com/belaventer/latinmix-fitness/blob/master/screenshots/mockup-screenshot.png "LatinMix Fitness Mockup")
 
 [Demo of Website](https://belaventer.github.io/latinmix-fitness/).
 
@@ -97,7 +97,7 @@ On the **Contact** page:
 - On table and desktop, two options will be displayed in line (horizontally).
 
 
-### Existing Features *// to complete during implementation*
+### Existing Features
 - **Navigation Bar** feature: on the left side, there is the **Header Logo** linking back to the **Home** page.
 - **Navigation Bar** feature: on the right side, there are links to **Home**, **Classes**, **Plans** and **Contact** pages. **Classes** pages are under a dropdown menu expandable when clicking.
 On **Mobile** all links are collapsed into the Hamburger Symbol.
@@ -148,7 +148,7 @@ The business owner wishes to create an application for booking the classes onlin
 If a class is fully-booked classes, users would be able to join a waitlist in case of cancelations.
 The current budget, time constraint and developer knowledge does not allow for this feature.
 
-## Technologies used *// to complete during implementation*
+## Technologies used
 ### Languages
 - HTML | HTML5
 - CSS | CSS3
@@ -172,6 +172,9 @@ The current budget, time constraint and developer knowledge does not allow for t
 - [Clip Studio Paint](https://www.clipstudio.net/en/):
 
    Used for images resizing and colour adjustments.
+- [AutoPrefixer](https://autoprefixer.github.io):
+
+   Used on CSS to ensure functionality accross browsers.
 
 ## Testing
 Refer to [TESTING.md](https://github.com/belaventer/latinmix-fitness/blob/master/TESTING.md) file for testing details.
@@ -282,5 +285,5 @@ I'd also like to thanks Anna Greaves and Jim Morel for the helpful talks on MS1 
 This project purpose is only educational and the gym "LatinMix Fitness" portraited is a fictional business.
 
 ## Notes on Commits
-Initially I have understood each new file required its own "Initial Commit", for that reason there are multiple "Initial Commits" on the revision history.
+Initially I had understood each new file required its own "Initial Commit", for that reason there are multiple "Initial Commits" on the revision history.
 My Mentor has explained each project, conventionally, only have one "Initial Commit". This is a lesson learned to be applied for future projects.

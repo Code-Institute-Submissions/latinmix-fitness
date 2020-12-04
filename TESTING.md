@@ -5,9 +5,17 @@
 Refer to [Main project file](https://github.com/belaventer/latinmix-fitness/blob/master/README.md) for further detail.
 
 ## Code validation
+- [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
+- [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
+
+All HTML and CSS files were validated with direct input and returned no errors at the time of this entry.
+
 
 ## User stories testing
 1.	As a new visitor to the website, I want to easily navigate throughout all pages of the website.
+
+![Website navigation bar](https://github.com/belaventer/latinmix-fitness/blob/master/screenshots/navigation-screenshot.png "Website navigation bar")
+
     - As a new visitor, I can easily navigate on the website by the Navigation Bar located at the top of each page.
     - As a new visitor, without the use of the Navigation Bar, I can also complete the following paths from Home page to contacting the business:
         Home > Class > Contact
@@ -15,16 +23,25 @@ Refer to [Main project file](https://github.com/belaventer/latinmix-fitness/blob
     - As a new visitor, I can clearly idetified which page I'm on from the Heading on top of the page and the Hero Image for the Home page.
 
 2.	As a new visitor to the website, I want to clearly identify what classes that are being offered.
+
+![Classes cards on Home page](https://github.com/belaventer/latinmix-fitness/blob/master/screenshots/classescards-screenshot.png "Classes cards on Home page")
+
     - As a new visitor, I can find the four options of classes displayed on the Home page, just below the About Us section.
     - As a new visitor, I can also identify the four options available from the Navigation Bar dropdown menu under "Classes".
 
 3.	As a potential client, I want to learn more about each individual class.
+
+![Classes page layout](https://github.com/belaventer/latinmix-fitness/blob/master/screenshots/classespage-screenshot.png "Classes page layout")
+
     - As a potential client, I can click the "Learn More" button for each class to be redirected to the Class page.
     - As a potential client, I can also access the Class page from the Navigation Bar.
     - As a potential client, on the Class page, I can play a video showing of the dance style.
     - As a potential client, on the Class page, I can read more about the dance style's origin and step / beat.
 
 4.	As a potential client, I want to easily find the directions to the facility as the business contact information.
+
+![Business details on Contact page](https://github.com/belaventer/latinmix-fitness/blob/master/screenshots/businessdetails-screenshot.png "Business details on Contact page")
+
     - As a potential client, I can find the Business address as well as a interactive embbeded Google maps on the bottom of the Home page.
     - As a potential client, I can use the Navigation Bar to load the Contact page and find the same address and map.
     - As a potential client, I can scroll down to the bottom of each page and find the Business phone and email address on the footer. 
@@ -32,6 +49,9 @@ Refer to [Main project file](https://github.com/belaventer/latinmix-fitness/blob
     - As a potential client, I can directly contact the business by sending a form with my query.
 
 5.	As a potential client, I want to find clear pricing and payment instructions.
+
+![Plans page layout](https://github.com/belaventer/latinmix-fitness/blob/master/screenshots/plans-screenshot.png "Plans page layout")
+
     - As a potential client, I can find the price for just one class from the Home page.
     - As a potential client, I learn that are other Plans options from the Home page.
     - As a potential client, I can learn more about each plan option by clicking the button "Find you perfect paln!" on the Home page.
@@ -39,9 +59,21 @@ Refer to [Main project file](https://github.com/belaventer/latinmix-fitness/blob
     - As a potential client, on the Plans page, I learn how payments are completed and the payment options.
 
 6.	As an existing client, I want to be on top of all updates on classes and offers.
+
+![Contact forms](https://github.com/belaventer/latinmix-fitness/blob/master/screenshots/contactforms-screeshot.png "Contact forms")
+
     - As an existing client, I navigate to the Contact page from the Navigation Bar and subscribe to the business Newsletter.
 
 ## Manual testing of features
+The deployed GitHub Page website was viewed on 2 desktops screens (21 and 13 inches) and also on Motorola G6 Play device.
+
+The website was tested with Google Chrome (v.87), Mozilla Firefox (v.83) and Microsoft Edge (v.87) browsers.
+
+On mobile, it was viewed with Google Chrome application v.86 on Android 9.
+
+The Developer Tools of Google Chrome (v.87) on desktop was used to verify responsiveness on different devices. Also used to Audit the web pages with Lighthouse.
+Home page had a decrease Performance Audit due to large content (images). Point for improvement on future versins of website.
+
 1. **Navigation Bar** feature **Header Logo**:
 
    | Test No. | Action & spected results | Pass / Fail |
