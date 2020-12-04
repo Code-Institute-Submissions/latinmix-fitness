@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 /* ----- FONTS ----- */
@@ -58,22 +65,37 @@ hr {
 .btn-grey-pink:active {
     background-color: #D96A88;
     border-color: #D96A88;
-    box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+            box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
     color: #e5f3f1;
+}
+
+iframe {
+    margin: 0;
+    border: 0;
 }
 
 /* Keeping the footer at the bottom solution found in https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f */
 /* Thanks to my mentor Ignatius Ukwuoma for this link */
 .fullheight-body-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100%;
     min-height: 100vh;
-    flex-flow: column wrap;
-    align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
 }
 
 .fullheight-body-container > main {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 
 /* ----- COLOURS ----- */
@@ -185,11 +207,13 @@ footer a:hover {
 .hero-image-text hr {
     border-color: #e5f3f1;
     margin-left: 10vw;
-    animation: hero-hr-in 3s ease-out;
+    -webkit-animation: hero-hr-in 3s ease-out;
+            animation: hero-hr-in 3s ease-out;
 }
 
 .hero-image-text h2, .hero-image-text p {
-    animation: hero-text-in 3s ease-out;
+    -webkit-animation: hero-text-in 3s ease-out;
+            animation: hero-text-in 3s ease-out;
 }
 
 /* ----- HOME PAGE - ABOUT US ----- */
@@ -235,7 +259,7 @@ footer a:hover {
     text-decoration: inherit;
 }
 
-.our-classes-card button{
+.our-classes-card div{
     color: inherit;
     border-color: inherit;
     font-size: inherit;
@@ -275,12 +299,15 @@ footer a:hover {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     -webkit-transition-property: color;
+    -o-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+       transition-duration: 0.3s;
 }
 .hvr-sweep-to-bottom:before {
     content: "";
@@ -294,22 +321,31 @@ footer a:hover {
     border: solid #2B4038 3px;
     border-radius: 8px;
     -webkit-transform: scaleY(0);
-    transform: scaleY(0);
+    -ms-transform: scaleY(0);
+        transform: scaleY(0);
     -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+        transform-origin: 50% 0;
     -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
+    transition-property: transform, -webkit-transform;
     -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+       transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+       transition-timing-function: ease-out;
 }
 .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
     color: #e5f3f1;
 }
 .hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
     -webkit-transform: scaleY(1);
-    transform: scaleY(1);
+    -ms-transform: scaleY(1);
+        transform: scaleY(1);
 }
 /* END OF HOVER.CSS EXTRACT */
 
@@ -317,8 +353,13 @@ footer a:hover {
 .find-plan {
     font-size: 1.10rem;
     padding: 2.5rem 1.75rem 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
 }
 
 .find-plan p{
@@ -341,8 +382,10 @@ footer a:hover {
 }
 
 .blink {
-    animation: shake-price 0.3s infinite;
-    animation-direction: alternate;
+    -webkit-animation: shake-price 0.3s infinite;
+            animation: shake-price 0.3s infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
 }
 
 /* Justify only one flex item to the left solution taken from https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties */
@@ -369,15 +412,22 @@ footer a:hover {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+     transition-duration: 0.3s;
   -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 .hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
   -webkit-transform: translateX(8px);
-  transform: translateX(8px);
+  -ms-transform: translateX(8px);
+      transform: translateX(8px);
   text-decoration: none;
 }
 /* END OF HOVER.CSS EXTRACT */
@@ -385,9 +435,16 @@ footer a:hover {
 /* ----- HOME PAGE - GALLERY ----- */
 .gallery {
     padding: 2.5rem 1.75rem 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .gallery>h2 {
@@ -399,7 +456,9 @@ footer a:hover {
 .gallery-modal-button{
     background-color: rgba(0,0,0,0);
     border: none;
-    flex: 20%;
+    -webkit-box-flex: 20%;
+        -ms-flex: 20%;
+            flex: 20%;
 }
 
 .gallery-modal-button:hover,
@@ -407,7 +466,8 @@ footer a:hover {
 .gallery-modal-button:active{
     background-color: rgba(0,0,0,0);
     border: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .gallery-modal-button>img {
@@ -451,11 +511,18 @@ footer a:hover {
 
 /* ----- HOME PAGE - CONTACT ----- */
 .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     padding: 2.5rem 1.75rem 1.5rem;
     color: #e5f3f1;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .contact-info h2 {
@@ -479,7 +546,9 @@ footer a:hover {
 }
 
 .contact-info-text {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     padding-left: 5px;
 }
 
@@ -532,12 +601,14 @@ footer a:hover {
 .contact-us form button:focus:not(:disabled):not(.disabled):active {
     background-color: #D96A88;
     border-color: #D96A88;
-    box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+            box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
 }
 
 .contact-us form *:focus{
     border-color: #D96A88;
-    box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+            box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
 }
 
 /* ----- CONTACT PAGE - BUSINESS INFO ----- */
@@ -561,14 +632,14 @@ footer a:hover {
 }
 
 .business-contact-head {
-    text-align: left;
+    text-align: right;
     padding-right: 0.75rem;
     letter-spacing: 1.5px;
     font-weight: 500;
 }
 
 .business-contact-info {
-    text-align: right;
+    text-align: left;
     letter-spacing: 1.5px;
     font-weight: 300;
 }
@@ -576,7 +647,6 @@ footer a:hover {
 .business-info-address {
     text-align: right;
     padding-top: 25px;
-    padding-right: 10px; 
 }
 
 /* ----- PLANS PAGE ----- */
@@ -593,7 +663,8 @@ footer a:hover {
 }
 
 .our-plans p.col-12{
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
     color: #2B4038;
 }
 
@@ -603,32 +674,40 @@ footer a:hover {
     border-radius: 20px;
     background-color: #D96A88;
     color: #e5f3f1;
-    box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
+            box-shadow: 0 0 0 0.2rem rgba(242, 92, 119, 0.253);
     margin-top: 15px;
     margin-bottom: 15px;
     min-height: 80px;
     padding: 20px 0;
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
 }
 
 .plans-casual {
-    animation: show-item 2s ease-in;
+    -webkit-animation: show-item 2s ease-in;
+            animation: show-item 2s ease-in;
 }
 
 .plans-dancer {
-    animation: show-item 2s ease-in 1s;
-    animation-fill-mode: backwards;
+    -webkit-animation: show-item 2s ease-in 1s;
+            animation: show-item 2s ease-in 1s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
 }
 
 .plans-pro {
-    animation: show-item 2s ease-in 1.5s;
-    animation-fill-mode: backwards;
+    -webkit-animation: show-item 2s ease-in 1.5s;
+            animation: show-item 2s ease-in 1.5s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
 }
 
 /* Specificity required to ovewrite no-gutters padding */
 .our-plans > a.col-auto {
     padding: 0.85em 1.5em;
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
 }
 
 /* ----- CLASSES PAGE ----- */
@@ -642,14 +721,16 @@ footer a:hover {
     font-size: 3.5rem;
     padding-bottom: 20px;
     text-align: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 .classes-videos {
     height: 28vw;
 }
 
-.classes-info > article.col-12{
+.classes-info > div.col-12{
     padding: 0 1.45rem;
 }
 
@@ -669,17 +750,35 @@ footer a:hover {
 /* Specificity required to ovewrite no-gutters padding */
 .classes-info a.col-auto {
     padding: 0.85em 1.2em;
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
 }
 
 /* ----- ANIMATIONS ----- */
 /* Animation inspired by Code Institute Full Stack Development Course HTML/CSS Project - Love Running */
+@-webkit-keyframes hero-text-in {
+    from {
+        padding-left: 0;
+    }
+    to {
+        padding-left: 10vw;
+    }
+}
 @keyframes hero-text-in {
     from {
         padding-left: 0;
     }
     to {
         padding-left: 10vw;
+    }
+}
+
+@-webkit-keyframes hero-hr-in {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 10vw;
     }
 }
 
@@ -692,6 +791,17 @@ footer a:hover {
     }
 }
 
+@-webkit-keyframes shake-price {
+    from {
+        background-color: #D96A88;
+        color: #e5f3f1;
+    }
+    to {
+        background-color: transparent;
+        color: #2B4038;
+    }
+}
+
 @keyframes shake-price {
     from {
         background-color: #D96A88;
@@ -700,6 +810,15 @@ footer a:hover {
     to {
         background-color: transparent;
         color: #2B4038;
+    }
+}
+
+@-webkit-keyframes show-item {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
     }
 }
 
@@ -733,7 +852,7 @@ footer a:hover {
         border-radius: 8px;
     }
 
-    .our-classes-card button{
+    .our-classes-card div{
         border-color: #e5f3f1;
     }
 
@@ -743,7 +862,9 @@ footer a:hover {
     }
 
     .gallery>button {
-        flex: 30%;
+        -webkit-box-flex: 30%;
+            -ms-flex: 30%;
+                flex: 30%;
     }
         
     .classes-videos {
@@ -763,7 +884,9 @@ footer a:hover {
     } 
 
     .gallery>button {
-        flex: 45%;
+        -webkit-box-flex: 45%;
+            -ms-flex: 45%;
+                flex: 45%;
     }
 }
 
@@ -779,14 +902,13 @@ footer a:hover {
 
     /* Gallery responsiveness learned from W3Schools - https://www.w3schools.com/css/css3_flexbox_responsive.asp */
     .gallery>button {
-        flex: 60%;
+        -webkit-box-flex: 60%;
+            -ms-flex: 60%;
+                flex: 60%;
         max-width: 80%;
     }
-}
 
-/* Mobile screens */
-@media only screen and (max-width: 576px) {
-.business-info-address {
+    .business-info-address {
     text-align: center;
     }
 }
